@@ -13,7 +13,7 @@ interface HttpResourceHook<T, TId = string> {
   replace: (id: TId, newEntity: T) => Promise<T | undefined>;
 }
 
-export function useHttpResource<T, TId = string>({url, ...httpHookProps} = {} as HttpResourceHookProps): HttpResourceHook<T, TId> {
+export const useHttpResource = <T, TId = string>({url, ...httpHookProps} = {} as HttpResourceHookProps): HttpResourceHook<T, TId> => {
   const http = useHttp(httpHookProps);
 
   if (!url) {
