@@ -8,9 +8,9 @@ interface HttpHookProps {
 interface HttpHook {
   get: <T>(url: string) => Promise<T>;
   delete: <T>(url: string) => Promise<T>;
-  post: <TBody, TResponse>(url: string, body: TBody) => Promise<TResponse>;
-  put: <TBody, TResponse>(url: string, body: TBody) => Promise<TResponse>;
-  patch: <TBody, TResponse>(url: string, body: TBody) => Promise<TResponse>;
+  post: <TResponse = any, TBody = any>(url: string, body: TBody) => Promise<TResponse>;
+  put: <TResponse = any, TBody = any>(url: string, body: TBody) => Promise<TResponse>;
+  patch: <TResponse = any, TBody = any>(url: string, body: TBody) => Promise<TResponse>;
 }
 
 export const useHttp: SomeHooks.Hook<HttpHookProps, HttpHook> = ({axiosInstance, axiosConfig} = {}) => {
@@ -24,15 +24,15 @@ export const useHttp: SomeHooks.Hook<HttpHookProps, HttpHook> = ({axiosInstance,
     instance.delete<T>(url)
       .then(response => response.data);
 
-  const post = <TBody, TResponse>(url: string, body: TBody) =>
+  const post = <TResponse, TBody>(url: string, body: TBody) =>
     instance.post<TResponse>(url, body)
       .then(response => response.data);
       
-  const put = <TBody, TResponse>(url: string, body: TBody) =>
+  const put = <TResponse, TBody>(url: string, body: TBody) =>
     instance.put<TResponse>(url, body)
       .then(response => response.data);
 
-  const patch = <TBody, TResponse>(url: string, body: TBody) =>
+  const patch = <TResponse, TBody>(url: string, body: TBody) =>
     instance.patch<TResponse>(url, body)
       .then(response => response.data);
 

@@ -1,6 +1,6 @@
 {
   "name": "some-react-hooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This package contains some nice to have react hooks",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
