@@ -1,11 +1,11 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 
-interface HttpHookProps {
+export interface HttpHookProps {
   axiosInstance?: AxiosInstance;
   axiosConfig?: AxiosRequestConfig;
 }
 
-interface HttpHook {
+export interface HttpHook {
   get: <T>(url: string) => Promise<T>;
   delete: <T>(url: string) => Promise<T>;
   post: <TResponse = any, TBody = any>(url: string, body: TBody) => Promise<TResponse>;
