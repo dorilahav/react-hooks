@@ -1,0 +1,35 @@
+{
+  "name": "some-react-hooks",
+  "version": "1.0.0",
+  "description": "This package contains some nice to have react hooks",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorilahav/some-react-hooks.git"
+  },
+  "author": "Dori Lahav Waisberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorilahav/react-hooks/issues"
+  },
+  "homepage": "https://github.com/dorilahav/react-hooks#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/react": "^16.9.55",
+    "eslint": "^7.12.1",
+    "typescript": "^4.0.5"
+  },
+  "keywords": ["react", "hooks", "react-hooks", "reacthooks", "http"],
+  "files": [
+    "lib/**/*"
+  ]
+}
