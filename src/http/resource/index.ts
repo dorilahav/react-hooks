@@ -1,0 +1,1 @@
+export {useHttpResource} from './ResourceHook';
