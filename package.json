@@ -15,9 +15,9 @@
   "author": "Dori Lahav Waisberg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dorilahav/react-hooks/issues"
+    "url": "https://github.com/dorilahav/some-react-hooks/issues"
   },
-  "homepage": "https://github.com/dorilahav/react-hooks#readme",
+  "homepage": "https://github.com/dorilahav/some-react-hooks#readme",
   "dependencies": {
     "axios": "^0.21.0",
     "react": "^17.0.1"
