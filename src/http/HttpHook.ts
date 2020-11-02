@@ -13,7 +13,7 @@ export interface HttpHook {
   patch: <TResponse = any, TBody = any>(url: string, body: TBody) => Promise<TResponse>;
 }
 
-export const useHttp: SomeHooks.Hook<HttpHookProps, HttpHook> = ({axiosInstance, axiosConfig} = {}) => {
+export const useHttp = ({axiosInstance, axiosConfig} = {} as HttpHookProps): HttpHook => {
   const instance = axiosInstance ?? axios.create(axiosConfig);
 
   const get = <T>(url: string) =>
