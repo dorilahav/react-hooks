@@ -1,10 +1,10 @@
 import {HttpHookProps, useHttp} from '../HttpHook';
 
-interface HttpResourceHookProps extends HttpHookProps {
+export interface HttpResourceHookProps extends HttpHookProps {
   url: string;
 }
 
-interface HttpResourceHook<TViewModel, TId = string> {
+export interface HttpResourceHook<TViewModel, TId = string> {
   getAll: () => Promise<TViewModel[]>;
   getById: (id: TId) => Promise<TViewModel>;
   create: (entity: TViewModel) => Promise<TViewModel>;

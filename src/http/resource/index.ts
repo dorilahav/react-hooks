@@ -1,1 +1,1 @@
-export {useHttpResource} from './ResourceHook';
+export {useHttpResource, HttpResourceHook, HttpResourceHookProps} from './ResourceHook';
