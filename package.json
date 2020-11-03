@@ -1,6 +1,6 @@
 {
   "name": "some-react-hooks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Publishing some react hooks that I created for myself.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
