@@ -5,7 +5,7 @@ const FIELD_NAME = 'token';
 
 describe('useStorage hook bound to localStorage should be able to', () => {
   const createHook = () => {
-    const {result} = renderHook(() => useStorage<string>({field: FIELD_NAME, storageType: StorageType.LocalStorage}))
+    const {result} = renderHook(() => useStorage({field: FIELD_NAME, storageType: StorageType.LocalStorage}))
 
     return result;
   }
